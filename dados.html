@@ -1,73 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Dice Game</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="app.js"></script>
 
-        .DiceGame {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .DiceGame-dice {
-            width: 100px;
-            height: 100px;
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2em;
-            border: 2px solid #000;
-        }
-
-        .DiceGame-button {
-            padding: 10px 20px;
-            font-size: 1em;
-            cursor: pointer;
-        }
-
-        .yellow { background-color: #FFEB3B; }
-        .red { background-color: #F44336; }
-        .light-blue { background-color: #03A9F4; }
-        .black { background-color: #000000; }
-        .green { background-color: #4CAF50; }
-        .white { background-color: #FFFFFF; }
-    </style>
 </head>
+
 <body>
     <div class="DiceGame">
         <div class="DiceGame-dice white" id="dice"></div>
         <button class="DiceGame-button" id="rollButton">Lanzar dado</button>
     </div>
-    <script>
-        const diceElement = document.getElementById('dice');
-        const rollButton = document.getElementById('rollButton');
 
-        const colors = ['yellow', 'red', 'light-blue', 'black', 'green', 'white'];
-
-        function getRandomColor() {
-            const randomIndex = Math.floor(Math.random() * colors.length);
-            return colors[randomIndex];
-        }
-
-        function rollDice() {
-            const color = getRandomColor();
-            diceElement.className = `DiceGame-dice ${color}`;
-        }
-
-        rollButton.addEventListener('click', rollDice);
-    </script>
 </body>
+
 </html>

@@ -1,0 +1,81 @@
+:root {
+    font-family: "Nunito Sans", sans-serif;
+
+    --uiGreen: rgba(15, 206, 126, 0.678);
+    --uiYellow: rgb(255, 207, 92);
+    --uiBlue: rgb(16, 109, 190);
+    --uiWhite: #dbdbdb;
+    --uiBlack: rgb(24, 24, 24);
+    --uiRed: rgb(223, 41, 56);
+}
+
+
+html {
+    font-family: var(--main-font);
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.DiceGame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.DiceGame-dice {
+    width: 12em;
+    height: 12em;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.DiceGame-button {
+    padding: 1em 2em;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 5em;
+    border: none;
+}
+
+.yellow {
+    background-color: #FFEB3B;
+}
+
+.red {
+    background-color: #F44336;
+}
+
+.light-blue {
+    background-color: #03A9F4;
+}
+
+.black {
+    background-color: #000000;
+}
+
+.green {
+    background-color: #4CAF50;
+}
+
+.white {
+    background-color: #FFFFFF;
+}
